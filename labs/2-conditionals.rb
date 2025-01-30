@@ -21,12 +21,20 @@
 
 # 1. set the first die and write it to the screen
 die1 = rand(1..6)
-puts die1
+puts "die1 value is: "+die1.to_s
 
 # 2. set the second die and write it to the screen
 die2 = rand(1..6)
-puts die2
+puts "die1 value is: "+die2.to_s
 
 # 3. create a variable for the total and write it to the screen
 total = die1 + die2
-puts "The total is: #{total}"
+puts "total value is: "+total.to_s
+
+if total == 7 || total == 11
+    puts "YOU WIN!"
+elsif total == 2 || total == 3 || total == 12
+    puts "YOU LOSE!"
+else
+    puts "The total is: #{total}"
+end
